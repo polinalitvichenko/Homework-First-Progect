@@ -78,7 +78,7 @@ input[type="number"]::-webkit-outer-spin-button {
 .foot-right-background {
   width: 59rem;
   height: 53rem;
-  background-image: url('/public/assets/images/foot-container-img.png');
+  background-image: url('./img/foot-container-img.png');
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -147,14 +147,14 @@ input[type="number"]::-webkit-outer-spin-button {
   display: inline-block;
   width: 2.4rem;
   height: 2.4rem;
-  background: url('/public/assets/images/radio-input.svg') no-repeat center center;
+  background: url('./img/radio-input.svg') no-repeat center center;
   background-size: contain;
   margin-right: 8px;
   cursor: pointer;
 }
 
 .foot-radio-btn input[type="radio"]:checked+label::before {
-  background: url('/public/assets/images/checked-radio.svg') no-repeat center center;
+  background: url('./img/checked-radio.svg') no-repeat center center;
   background-size: contain;
 }
 
