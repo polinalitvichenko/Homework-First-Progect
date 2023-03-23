@@ -3,9 +3,10 @@ header {
 }
 
 .header-container {
-  width: 119rem;
-  height: 5.4rem;
+  max-width: 119rem;
+  width: 100%;
   margin: 0 auto;
+  height: 5.4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,7 +66,7 @@ header {
 
 @media all and (max-width: 320px) {
   .header-container {
-    width: 30.8rem;
+    min-width: 30.8rem;
     height: 3.6rem;
   }
 
