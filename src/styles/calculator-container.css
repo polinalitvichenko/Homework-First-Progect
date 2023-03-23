@@ -1,0 +1,362 @@
+.calculator-container {
+  max-width: 119rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding-bottom: 6rem;
+  border-bottom: .2rem solid var(--white-gray-color);
+}
+
+.calculator-left {
+  width: 49rem;
+  height: 43rem;
+  background: var(--white-gray-color);
+  border-radius: 1.2rem;
+  padding: 5rem;
+}
+
+.calculator-left h2 {
+  font-weight: 500;
+  font-size: 4.4rem;
+  line-height: 5.7rem;
+  text-transform: uppercase;
+  color: var(--black-color);
+  margin: 0;
+}
+
+.calculator-left-input {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 3.2rem;
+}
+
+.input-width,
+.input-height {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-width label,
+.input-height label,
+.rate {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: var(--dark-gray-color);
+}
+
+.input-width input,
+.input-height input {
+  background: var(--white-color);
+  border: .1rem solid var(--light-gray-color);
+  border-radius: 1.2rem;
+  width: 24rem;
+  height: 5.4rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.rate {
+  margin-top: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.calculator-radio-btn {
+  display: flex;
+  align-items: center;
+}
+
+.radio-icon {
+  display: none;
+}
+
+.calculator-radio-btn label {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  color: var(--black-color);
+  cursor: pointer;
+  margin-right: .8rem;
+  display: flex;
+  align-items: center;
+}
+
+.calculator-radio-btn label::before {
+  content: "";
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url('./img/radio-input.svg') no-repeat center center;
+  background-size: contain;
+  margin-right: .8rem;
+  cursor: pointer;
+}
+
+.calculator-radio-btn input[type="radio"]:checked+label::before {
+  background: url('./img/checked-radio.svg') no-repeat center center;
+  background-size: contain;
+}
+
+.left__btn {
+  background: transparent;
+  border: none;
+  padding: 1.8rem 4rem;
+  background-color: var(--yellow-color);
+  border-radius: 2.4rem;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  text-transform: uppercase;
+  color: var(--black-color);
+  margin-top: 6.5rem;
+  cursor: pointer;
+}
+
+.left__btn:hover {
+  background: var(--yellow-button-hover);
+}
+
+.calculator-right {
+  width: 59rem;
+  height: 53rem;
+  border-radius: 1.2rem;
+  background-image: url('./img/foot-container-img.png');
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.calculator-right-total {
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+  background-color: var(--white-color);
+  border-radius: .8rem;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.total-square,
+.total-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.9rem;
+}
+
+.total-left {
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: var(--dark-gray-color);
+  margin: 0;
+}
+
+.total-right {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--black-color);
+  margin: 0;
+}
+
+@media all and (max-width: 1024px) {
+  .calculator-container {
+    max-width: 89rem;
+  }
+
+  .calculator-left {
+    width: 38rem;
+    height: 35.7rem;
+    padding: 3rem;
+  }
+
+  .calculator-left h2 {
+    font-size: 3.4rem;
+    line-height: 4.4rem;
+  }
+
+  .calculator-left-input {
+    margin-top: 2.4rem;
+  }
+
+  .input-width input,
+  .input-height input {
+    max-width: 17rem;
+  }
+
+  .rate {
+    margin-top: 2.4rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .left__btn {
+    margin-top: 3.4rem;
+  }
+
+  .calculator-right {
+    width: 44rem;
+    height: 41.7rem;
+    background-size: 110%;
+  }
+
+  .calculator-right-total {
+    bottom: 3rem;
+    left: 3rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+
+  .calculator-container {
+    max-width: 63rem;
+    flex-direction: column;
+  }
+
+  .calculator-left {
+    width: 58.2rem;
+    height: 27rem;
+    padding: 2.4rem;
+  }
+
+  .calculator-left h2 {
+    font-size: 3.4rem;
+    line-height: 4.4rem;
+  }
+
+  .calculator-left-input {
+    margin-top: 2.4rem;
+  }
+
+  .input-width input,
+  .input-height input {
+    max-width: 26.8rem;
+    max-height: 3.6rem;
+  }
+
+  .rate {
+    margin-top: 2.4rem;
+    margin-bottom: .8rem;
+  }
+
+  .calculator-radio-btn label {
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+
+  .left__btn {
+    margin-top: 3.6rem;
+    padding: 1rem 2.4rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+
+  .calculator-right {
+    width: 63rem;
+    height: 22rem;
+    background-position: 30% 75%;
+    background-size: 100%;
+  }
+
+  .calculator-right-total {
+    bottom: 8.4rem;
+    left: 2.4rem;
+  }
+}
+
+@media all and (max-width: 320px) {
+
+  .calculator-container {
+    max-width: 30.8rem;
+    flex-direction: column;
+    gap: .4rem;
+  }
+
+  .calculator-left {
+    width: 26.8rem;
+    height: 42rem;
+    padding: 2rem;
+  }
+
+  .calculator-left h2 {
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+  }
+
+  .calculator-left-input {
+    margin-top: 1.6rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .input-width input,
+  .input-height input {
+    max-width: 26.8rem;
+    max-height: 3.6rem;
+  }
+
+  .rate {
+    margin-top: 1.6rem;
+    margin-bottom: .8rem;
+  }
+
+  .calculator-radio-btn {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: .8rem;
+  }
+
+  .calculator-radio-btn label {
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    width: 11.6rem;
+    height: 2.4rem;
+  }
+
+  .left__btn {
+    margin-top: 2.4rem;
+    padding: 1rem 2.4rem;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+  }
+
+
+  .calculator-right {
+    width: 30.8rem;
+    height: 12.8rem;
+    background-position: 30% 65%;
+    background-size: 100%;
+  }
+
+  .calculator-right-total {
+    bottom: 2rem;
+    left: 2rem;
+    gap: .8rem;
+    padding: 1.6rem;
+  }
+
+  .total-square,
+  .total-price {
+    gap: 2rem;
+  }
+}

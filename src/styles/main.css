@@ -1,13 +1,19 @@
 @import './normalize.css';
 @import './veriables.css';
 @import './header.css';
-@import './head-container.css';
-@import './body-container.css';
-@import './foot-container.css';
+@import './hero-container.css';
+@import './benefits-container.css';
+@import './calculator-container.css';
 @import './footer.css';
 
 html {
   font-size: calc(100vw / 1440 * 10);
+}
+
+@media screen and(max-width: 1024px) {
+  html {
+    font-size: calc (100vw / 768px * 10);
+  }
 }
 
 @media screen and(max-width: 768px) {

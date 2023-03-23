@@ -1,0 +1,142 @@
+.benefits-container {
+  max-width: 104rem;
+  margin: 8rem auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7rem;
+}
+
+.benefits-left h2 {
+  width: 46rem;
+  height: 11.4rem;
+  font-weight: 500;
+  font-size: 4.4rem;
+  line-height: 5.7rem;
+  text-transform: uppercase;
+  color: var(--black-color);
+}
+
+.benefits-right {
+  width: 49rem;
+}
+
+.benefits-right-ul {
+  padding: 0 !important;
+}
+
+.benefits-right-ul li:first-child {
+  margin-top: 0;
+}
+
+.benefits-right-ul li {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.1rem;
+  text-transform: uppercase;
+  color: var(--black-color);
+  margin-top: 3.2rem;
+}
+
+.benefits-right-ul p {
+  margin: 0 !important;
+}
+
+
+.marker-img {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1.6rem;
+}
+
+@media all and (max-width: 1024px) {
+  .benefits-container {
+    max-width: 83rem;
+    margin: 6rem auto;
+    gap: 9rem;
+  }
+
+
+  .benefits-left h2 {
+    width: 33rem;
+    height: 8.8rem;
+    font-size: 3.4rem;
+    line-height: 4.4rem;
+  }
+
+  .benefits-right {
+    width: 51rem;
+  }
+
+  .benefits-right-ul li {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+
+  .benefits-container {
+    max-width: 57rem;
+    margin: 6rem auto;
+    gap: 2.4rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .benefits-left h2 {
+    width: 44rem;
+    height: 4.4rem;
+    font-size: 3.4rem;
+    line-height: 4.4rem;
+    margin: 0;
+  }
+
+  .benefits-right {
+    width: 44rem;
+  }
+
+  .benefits-right-ul li {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    margin-top: 1.6rem;
+  }
+}
+
+@media all and (max-width: 320px) {
+
+  .benefits-container {
+    max-width: 26.8rem;
+    margin: 6rem auto;
+    gap: 1.6rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .benefits-left h2 {
+    width: 26.8rem;
+    height: 6.2rem;
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+    margin: 0;
+  }
+
+  .benefits-right {
+    width: 26.8rem;
+  }
+
+  .benefits-right-ul li {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-top: 1.6rem;
+
+  }
+
+  .marker-img {
+    margin-right: .8rem;
+  }
+}

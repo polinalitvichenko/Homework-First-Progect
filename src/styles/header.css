@@ -17,10 +17,8 @@ header {
 }
 
 .header__btn {
-  width: 16.3rem;
-  height: 5.4rem;
-  border: 1px solid var(--black-color);
-  border-radius: 24px;
+  border: .1rem solid var(--black-color);
+  border-radius: 2.4rem;
   background: transparent;
   font-weight: 400;
   font-size: 1.6rem;
@@ -36,6 +34,49 @@ header {
 }
 
 .header__btn:active {
-  border: 1px solid var(--yellow-color);
+  border: .1rem solid var(--yellow-color);
   background: transparent;
+}
+
+@media all and (max-width: 1024px) {
+  .header-container {
+    width: 89rem;
+  }
+}
+
+
+@media all and (max-width: 768px) {
+  .header-container {
+    width: 63rem;
+    height: 3.6rem;
+  }
+
+  .header__img {
+    width: 12.4rem;
+    height: 2.9rem;
+  }
+
+  .header__btn {
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    padding: 1rem 2.4rem;
+  }
+}
+
+@media all and (max-width: 320px) {
+  .header-container {
+    width: 30.8rem;
+    height: 3.6rem;
+  }
+
+  .header__img {
+    width: 12.4rem;
+    height: 2.9rem;
+  }
+
+  .header__btn {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 1rem 2.4rem;
+  }
 }
